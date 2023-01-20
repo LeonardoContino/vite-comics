@@ -1,10 +1,19 @@
 <script>
+import AppHeader from './components/AppHeader.vue'
+import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
+
+export default{
+    name: 'GeneralApp',
+    components: {AppHeader, AppMain, AppFooter}
+}
+
 
 </script>
 
 <template>
  <div class="container border">
-
+    <AppHeader></AppHeader>
  </div>
   
 </template>
