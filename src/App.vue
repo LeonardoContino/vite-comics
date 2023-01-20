@@ -1,4 +1,4 @@
-<script setup>
+<script>
 
 </script>
 
@@ -7,6 +7,8 @@
   
 </template>
 
-<style scoped>
-
+<style>
+body {
+  font-family: "Open Sans", sans-serif;
+}
 </style>
