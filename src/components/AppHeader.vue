@@ -93,7 +93,7 @@ img{
     justify-content: center;
     
 }
-a .active{
+.active{
     color: blue;
 }
 ul li {

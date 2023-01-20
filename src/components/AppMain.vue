@@ -1,6 +1,31 @@
 <script>
 export default{
-
+    data(){
+        return{
+            iconList: [
+                {
+                    text: 'DIGITAL COMICS',
+                     img: '../assets/img/buy-comics-digital-comics.png'
+                },
+                {
+                    text: 'DC MERCHANDISE',
+                     img: '../assets/img/buy-comics-digital-comics.png'
+                },
+                {
+                    text: 'SUBSCRIPTION',
+                     img: '../assets/img/buy-comics-digital-comics.png'
+                },
+                {
+                    text: 'COMIC SHOP LOCATOR',
+                     img: '../assets/img/buy-comics-digital-comics.png'
+                },
+                {
+                    text: 'DIGITAL DC POWER VISA',
+                     img: '../assets/img/buy-comics-digital-comics.png'
+                }
+            ]
+        }
+    }
 }
 
 </script>
