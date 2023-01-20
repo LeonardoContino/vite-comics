@@ -66,7 +66,9 @@ export default {
 
     <nav>
         <ul class="d-flex">
-            <li v-for="list in lists" v-text="list.text"></li>
+            <li v-for="list in lists"  :key="list.text" >
+                <a :href="list.url" v-text="list.text" :class="{'active' : list.current}"></a>
+            </li>
         </ul>
     </nav>
 
@@ -91,11 +93,16 @@ img{
     justify-content: center;
     
 }
+a .active{
+    color: blue;
+}
 ul li {
     list-style: none;
     padding: 5px;
     font-size: 15px;
-
-
+    text-transform: uppercase;
 }
+a {
+        text-decoration: none;
+    }
 </style>
