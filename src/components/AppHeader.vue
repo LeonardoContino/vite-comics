@@ -3,7 +3,7 @@ export default {
     name: 'AppHeader',
     data() {
         return{
-            ListNav: [
+            lists: [
   {
     text: 'Characters',
     url: '#',
@@ -64,6 +64,12 @@ export default {
         <img src="../assets/img/dc-logo.png" alt="">
     </figure>
 
+    <nav>
+        <ul class="d-flex">
+            <li v-for="list in lists" v-text="list.text"></li>
+        </ul>
+    </nav>
+
 </header>
 
 </template>
@@ -71,8 +77,25 @@ export default {
 <style scoped>
 header{
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
 img{
     width: 80px;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    
+}
+ul li {
+    list-style: none;
+    padding: 5px;
+    font-size: 15px;
+
+
 }
 </style>
