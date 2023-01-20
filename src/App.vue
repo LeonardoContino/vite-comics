@@ -14,7 +14,9 @@ export default{
 <template>
  <div class="container border">
     <AppHeader></AppHeader>
- </div>
+</div>
+    <AppMain></AppMain>
+ 
   
 </template>
 
