@@ -2,7 +2,8 @@
 export default {
     name: 'AppHeader',
     data() {
-        return{[
+        return{
+            ListNav: [
   {
     text: 'Characters',
     url: '#',
@@ -54,7 +55,7 @@ export default {
     current: false,
   }
 ]}
-};
+}};
 </script>
 
 <template>
