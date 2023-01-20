@@ -32,7 +32,5 @@ body {
     margin: auto;
     
 }
-.border{
-    border: 2px dashed black;
-}
+
 </style>
