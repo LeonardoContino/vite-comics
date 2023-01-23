@@ -1,34 +1,9 @@
 <script>
-import AppDataComics from './AppDataComics.vue'
 export default{
-    components:{AppDataComics},
-    
     data(){
         return{
-            
-            iconList: [
-                {
-                    text: 'DIGITAL COMICS',
-                     img: '../assets/img/buy-comics-digital-comics.png'
-                },
-                {
-                    text: 'DC MERCHANDISE',
-                     img: '../assets/img/buy-comics-digital-comics.png'
-                },
-                {
-                    text: 'SUBSCRIPTION',
-                     img: '../assets/img/buy-comics-digital-comics.png'
-                },
-                {
-                    text: 'COMIC SHOP LOCATOR',
-                     img: '../assets/img/buy-comics-digital-comics.png'
-                },
-                {
-                    text: 'DIGITAL DC POWER VISA',
-                     img: '../assets/img/buy-comics-digital-comics.png'
-                }
-            ],
-            comics:[
+            dataComics:
+            [
   {
     thumb:
       'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX',
@@ -118,68 +93,15 @@ export default{
         }
     }
 }
-
 </script>
 
+
 <template>
-    <div class="content">
-
-       
-        <div  class="cards-comics">
-            <div v-for="comic in comics" class="card">
-                <img :src="comic.thumb" alt="comic.series">
-                <figcaption>{{ comic.series }}</figcaption>
-            </div>
-        </div>
-        
-        
-    </div>
-
-    <section class="icon">
-        <div>
-            <div class="image-icon">
-                
-            </div>
-            <div class="text-icon"></div>
-        </div>
-    </section>
+   
 </template>
 
-<style scoped lang="scss">
-.content{
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    
-    
-    color: white;
-    background-color: #1C1C1C;
-}
-h3{
-    width: 1200px;
-    margin: 0 auto;
-}
-.icon{
-    height: 200px;
-    background-color:#1382F9 ;
-}
-.cards-comics{
-    display: flex;
-    flex-wrap: wrap;
-.card{
-    flex-basis: calc(100% / 6);
-    background-color: #1C1C1C;
- }
- .card img{
-width: 150px;
-height: 150px;
-object-fit: cover;
-padding-bottom: 5px;
-}
-}
 
-
+<style scoped>
 
 
 </style>
