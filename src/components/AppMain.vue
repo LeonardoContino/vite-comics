@@ -40,10 +40,14 @@ export default{
 </script>
 
 <template>
+    
     <div class="content">
+        <div class="btn-series">Current series</div>
         <div  class="cards-comics">
             <AppDataComics v-for="comic in comics" :key="comic.series" :comic="comic" ></AppDataComics>
-            
+        </div>
+        <div class="btn-more">
+            load more
         </div>
         
         
@@ -61,8 +65,10 @@ export default{
 
 <style scoped lang="scss">
 .content{
+    position: relative;
     min-height: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
@@ -86,7 +92,22 @@ export default{
     
 }
 }
+.btn-more{
+    background-color: #1382F9;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.btn-series{
+    position: absolute;
+    background-color: #1382F9;
+    color: white;
+    cursor: pointer;
+    top: -20px;
+    left: 50px;
+    padding: 5px 20px;
 
+}
 
 
 
